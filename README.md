@@ -17,10 +17,10 @@ So: here's the fruit of my efforts. A app.js script that does the hard lifting a
 
 ## How to use
 The Docker image has 4 environmental variables you can use:
-`ENDO_USER` should be set yo your Endomondo username.
-`ENDO_PASS` should be set yo your Endomondo password.
-`ENV ENDO_PATH` is where your gpx files will be written to. It defaults to `/root/endoexport/gpx`. Make sure you have map something local into our container in this directory so you can retrieve the actual files.
-`TZ` will set your timezone. Europe/Amsterdam is the default (go Orange!)
+-`ENDO_USER` should be set yo your Endomondo username.
+-`ENDO_PASS` should be set yo your Endomondo password.
+-`ENV ENDO_PATH` is where your gpx files will be written to. It defaults to `/root/endoexport/gpx`. Make sure you have map something local into our container in this directory so you can retrieve the actual files.
+-`TZ` will set your timezone. Europe/Amsterdam is the default (go Orange!)
 
 The image is multi-architecture, so it *should* run on most machines, including your trusty Pi. 
 
