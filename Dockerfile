@@ -10,7 +10,7 @@ ENV ENDO_PASS="secretEndoPassword"
 ENV ENDO_PATH="/root/endoexport/gpx"
 
 RUN npm install --save endomondo-api-handler cross-fetch rest-api-handler
-COPY app.js .
+ADD https://raw.githubusercontent.com/svenjambor/endoexport/main/app.js .
 
 #ENTRYPOINT ["tail", "-f", "/dev/null"]
 ENTRYPOINT ["node","app.js"]
