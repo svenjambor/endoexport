@@ -22,3 +22,6 @@ The Docker image has 4 environmental variables you can use:
 `ENDO_PASS` should be set yo your Endomondo password.
 `ENV ENDO_PATH` is where your gpx files will be written to. It defaults to `/root/endoexport/gpx`. Make sure you have map something local into our container in this directory so you can retrieve the actual files.
 `TZ` will set your timezone. Europe/Amsterdam is the default (go Orange!)
+
+So here's an example:
+`docker run --detach --volume <my/local/path/gpx>:/root/endoexport/gpx --env ENDO_USER="you@whatever.com" --env ENDO_PASS="yourverysecretpassword" sjambor/endoexport`
