@@ -1,0 +1,14 @@
+To build a Azure container isntance with this image and link a files share in a storge account user this:
+
+az container create \
+    --location <preferred Azure Region> \
+    --resource-group <ResourceGroup name>> \
+    --name endoexport \
+    --image sjambor/endoexport \
+    --environment-variables ENDO_USER="endouser@yourprovider.com" \
+    --secure-environment-variables ENDO_PASS="supersecretpassword" \
+    --restart-policy Never \
+    --azure-file-volume-account-name <storage account name> \
+    --azure-file-volume-account-key <storage account key> \
+    --azure-file-volume-share-name <file share name> \
+    --azure-file-volume-mount-path /root/endoexport/gpx
