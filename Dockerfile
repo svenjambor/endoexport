@@ -6,11 +6,11 @@ ENV NPM_CONFIG_LOGLEVEL info
 # set timezone so that tzdata doesn't prompt interactively
 ENV TZ=Europe/Amsterdam
 ENV ENDO_USER="endouser@yourprovider.com"
-ENV ENDO_PASS="secretEndoPassword"
+ENV ENDO_PASS="secretEndomondoPassword"
 ENV ENDO_PATH="/root/endoexport/gpx"
 
-RUN npm install --save endomondo-api-handler cross-fetch rest-api-handler
+#rest-api-handler changes needed to keep endomondo-api-handler running
+RUN npm install --save cross-fetch endomondo-api-handler rest-api-handler
 ADD https://raw.githubusercontent.com/svenjambor/endoexport/main/app.js .
 
-#ENTRYPOINT ["tail", "-f", "/dev/null"]
 ENTRYPOINT ["node","app.js"]
