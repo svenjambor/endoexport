@@ -2,7 +2,7 @@ To build a Azure container isntance with this image and link a files share in a 
 
 az container create \
     --location <preferred Azure Region> \
-    --resource-group <ResourceGroup name>> \
+    --resource-group <ResourceGroup name> \
     --name endoexport \
     --image sjambor/endoexport \
     --environment-variables ENDO_USER="endouser@yourprovider.com" \
