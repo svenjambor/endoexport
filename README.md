@@ -1,13 +1,11 @@
 # EndoExport
-Endomondo will be *shut down by Under Armor by the end of 2020*. As if that year hasn't been bad enough...
+Endomondo will be *shut down by Under Armor by the end of 2020*. As if the year hasn't been bad enough... By March 2021 UA will pull the plug on Endomondo's data as well. Bye-bye workout history.
 
-By March 2021 UA will pull the plug on Endomondo's data as well. Of course there's a great option to keep that data: sign up for UA's app, consent to their less-than-GDPR-friendly terms, and sync away.
+Of course there's a great option to keep that data: sign up for UA's app, consent to their less-than-GDPR-friendly terms, and sync away. But what if I don't want to do that? Then there's the option to send in a request to have your data exported to a zip file. Good luck with that- I tried several times and never got an answer.
 
-But what if I don't want to do that? Then there's the option to send in a request to have your data exported to a zip file. Good luck with that- I tried several times and never got an answer.
+Then there's third-party tools. [Tapiriik](https://tapiriik.com/), for example, is a great service meant to syc data between apps, Dropbox, and what have you.  I've been using it forever to keep Endomondo and Runkeeper in sync. Unfornatunaly it's been broken for at least 6 months.
 
-Then there's [tapiriik](https://tapiriik.com/). A great service meant to syc data between apps, Dropbox, and what have you.  I've been using it forwever to keep Endomondo and Runkeeper in sync. Unfornatunaly it's been broken for at least 6 months.
-
-So - something else. I found an excellent [API handler for Endomondo](https://github.com/fabulator/endomondo-api-handler). Go check it out. 
+So - time to get creative. I found an excellent [API handler for Endomondo](https://github.com/fabulator/endomondo-api-handler). Go check it out. 
 
 To run that JavaScript goodness and get some actual data out of Endomondo we need Node; I went down the Docker-route to get that set up.  Using the latest node image based on Alpine worked great. If you don't want to roll your own then [__here's the image on Docker Hub__](https://hub.docker.com/r/sjambor/endoexport)
 
