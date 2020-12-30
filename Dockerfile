@@ -9,7 +9,7 @@ ENV ENDO_USER="endouser@yourprovider.com"
 ENV ENDO_PASS="secretEndomondoPassword"
 ENV ENDO_PATH="/root/endoexport/gpx"
 
-#rest-api-handler changes needed to keep endomondo-api-handler running
+#rest-api-handler, also by Michal Ozogan (fabulator) changes needed to keep endomondo-api-handler running
 RUN npm install --save cross-fetch endomondo-api-handler rest-api-handler
 ADD https://raw.githubusercontent.com/svenjambor/endoexport/main/app.js .
 
