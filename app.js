@@ -46,5 +46,5 @@ const api = new Api();
               console.log(filestring);
               fs.writeFileSync(`${filepath}/${filestring}.gpx`, await api.getWorkoutGpx(workout.getId()), 'utf8');
         }
-    });
+     });
 })();
