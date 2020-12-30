@@ -1,4 +1,6 @@
 # EndoExport
+![Build](https://github.com/svenjambor/endoexport/workflows/Build/badge.svg) 
+
 Endomondo will be *shut down by Under Armor by the end of 2020*. As if the year hasn't been bad enough... By March 2021 UA will pull the plug on Endomondo's data as well. Bye-bye workout history.
 
 Of course there's a great option to keep that data: sign up for UA's app, consent to their less-than-GDPR-friendly terms, and sync away. But what if I don't want to do that? Then there's the option to send in a request to have your data exported to a zip file. Good luck with that- I tried several times and never got an answer.
